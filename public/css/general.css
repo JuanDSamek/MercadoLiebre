@@ -1,0 +1,29 @@
+:root {
+    --familyfont: "roboto";
+
+    --espesorroboto: 300;
+    --espesorRoboto: 400;
+    --espesorRoboto: 700;
+
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Grisoscuro: #666;
+    --Grisclaro: #ebebeb;
+    --Verde: #39b54a;
+
+    --Cuerposdetexto: 12px;
+    --TitularesBasadoentuúltimavisitaOfertas: 24px;
+    --Precios: 18px;
+    --Descuentos: 16px;
+    --Descripciones: 16px;
+}
+
+;
+
+* {
+    font-family: var(--roboto);
+
+    margin:0px;
+    
+}
