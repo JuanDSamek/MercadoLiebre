@@ -4,18 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<link rel = "stylessheet" href="/css/styles.css">
+    <title>Mercado Liebre</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/styles.css">
+
 </head>
 
 <body>
     <header class="header1">
-        <img src="/images/logo-mercado-liebre.svg" alt="Logo">
-        <form><input type="text" placeholder="Buscar Productos">
-            <div> <i class="fa-duotone fa-magnifying-glass"></i> </div>
+        <img src="./images/logo-mercado-liebre.svg" alt="Logo">
+
+        <form>
+            <input type="text" placeholder="Buscar Productos, marcas y más">
+            <i class="fa-solid fa-magnifying-glass"></i>
         </form>
 
-        <h4>Comprá en cuotas y sin tarjeta de crédito</h4>
+        <h4><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</h4>
 
         <nav>
             <ul>
@@ -26,12 +32,15 @@
             </ul>
 
             <ul>
-                <li><a href="">Creá tu cuenta</a></li>
-                <li><a href="">Infresá</a></li>
-                <li><a href="">Mis compras</a></li>
+                <li><a href="">Creá tu cuenta</a><i class="fa-regular fa-address-card"></i></li>
+                <li><a href="">Ingresá</a><i class="fa-solid fa-arrow-right-to-bracket"></i></li>
+                <li><a href="">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>
             </ul>
 
         </nav>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
 
         <img src="/images/img-home-banner.jpg" alt="Mockup">
 
@@ -129,7 +138,7 @@
     <section>
         <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
     </section>
-    
+
 </footer>
 
 </html>

@@ -1,4 +1,6 @@
 .header1{
-    background-color: var(--Amarillo);
-
+    background-color: #EAC926 ;
+};
+.header1 img{
+    width: 25%;
 }
