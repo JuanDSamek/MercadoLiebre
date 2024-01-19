@@ -1,0 +1,32 @@
+.main-footer {
+
+}
+
+.main-footer section {
+    text-align: center;
+}
+
+.main-footer section i {
+    width: 2em;
+    height: 0em;
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--Celeste);
+    font-size: x-large;
+}
+
+.main-footer section h4 {
+    text-align: center;
+}
+
+.main-footer section h4 p {
+    text-align: center;
+}
+
+.main-footer section p {
+    text-align: center;
+}
+
+.main-footer div {
+    margin-left: 17px;
+}
