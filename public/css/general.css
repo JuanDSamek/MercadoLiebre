@@ -1,5 +1,5 @@
 :root {
-    --familyfont: "roboto";
+    --roboto: 'Roboto';
 
     --espesorroboto: 300;
     --espesorRoboto: 400;
@@ -23,7 +23,16 @@
 
 * {
     font-family: var(--roboto);
+    margin: 0px;
+    text-align: justify;
+}
 
-    margin:0px;
-    
+body {
+    margin: auto;
+    text-align: justify;
+    font-family: var(--roboto);
+}
+a{
+    color: black;
+    text-decoration: none;
 }
