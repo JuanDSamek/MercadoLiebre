@@ -5,28 +5,23 @@
         height: 200px;
         width: 100%;
     }
-    .header1 .headercomp{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .header1 .headercomp img {
+    
+    .header1  img {
         width: 35%;
         margin: 10px 5px 5px 25px;
     }
 
-    .header1 .headercomp form {
+    .header1  form {
         display: block;
         margin: 10px 0px 10px 15px;
     }
 
-    .header1 .headercomp form input {
+    .header1 form input {
         display: inline;
         color: black;
         padding: 3px;
     }
-    .header1 .headercomp .lupa{
+    .header1 .lupa{
         font-size: 13px;
         background-color: var(--Grisclaro);
         margin: 1px 0px 0px 1px;
@@ -35,7 +30,7 @@
         display: inline;
     }
 
-    .header1 .headercomp h4 {
+    .header1 h4 {
         font-size: 15px;
         padding-left: 44px;
         font-weight: 400;
@@ -89,26 +84,23 @@
         font-family: var(--roboto);
         height: 300px;
     }
-    .header1 .headercomp{
-        display: flex;
-    }
-
-    .header1 .headercomp img {
+   
+    .header1 img {
         width: 38%;
         margin: 10px 5px 5px 25px
     }
 
-    .header1 .headercomp form {
+    .header1 form {
         display: block;
         margin: 10px 5px 5px 25px;
     }
 
-    .header1 .headercomp form input {
+    .header1 form input {
         display: inline;
         color: black;
         padding: 3px;
     }
-    .header1 .headercomp .lupa{
+    .header1 .lupa{
         font-size: 13px;
         background-color: var(--Grisclaro);
         margin: 1px 0px 0px 1px;
@@ -117,7 +109,7 @@
         display: inline;
     }
 
-    .header1 .headercomp h4 {
+    .header1 h4 {
         font-size: 15px;
         padding-left: 44px;
         font-weight: 400;
@@ -170,27 +162,24 @@
         height: 331px;
         font-size: var(--Cuerposdetexto);
     }
-    .header1 .headercomp{
-margin: auto;
-    }
-
-    .header1 .headercomp img {
+    
+    .header1 img {
         width: 38%;
         margin: 10px 5px 5px 25px;
     }
-    .header1 .headercomp form{
+    .header1 form{
         display: block;
         margin: 10px 0px 10px 15px;
     }
 
-    .header1 .headercomp form input {
+    .header1 form input {
         width: 21%;
         display: inline;
         color: black;
         padding: 3px;
         margin-right: 1px;
     }
-    .header1 .headercomp .lupa{
+    .header1 .lupa{
         font-size: 13px;
         background-color: var(--Grisclaro);
         margin: 1px 0px 0px 1px;
@@ -199,7 +188,7 @@ margin: auto;
         display: inline;
     }
 
-    .header1 .headercomp h4 {
+    .header1 h4 {
         font-size: var(--Cuerposdetexto);
         text-align: center;
         font-weight: 400;
