@@ -103,10 +103,9 @@
 
     .mainML section h3 {
         font-size: var(--TitularesBasadoentuúltimavisitaOfertas);
-        text-align: center;
-        font-family: var(--familyfont);
+        text-align: left;
         color: var(--Grisoscuro);
-        margin-top: 10px;
+        margin: 10px 0 10px 32px;
         height: 40px;
     }
 
@@ -122,8 +121,8 @@
         border: solid 1px lightgray;
         margin: auto;
         margin-bottom: 10px;
-        width: 320px;
-        height: 338px;
+        width: 263px;
+        height: 303px;
     }
 
     .mainML section .contart article .imgproducto {
@@ -152,25 +151,30 @@
         margin-left: auto;
         top: -20px;
     }
+    .mainML section .contart article .info .mover3070{
+        display: flex;
+    }
 
-    .mainML section .contart article .info .Precio {
+    .mainML section .contart article .info .mover3070 .Precio {
         font-size: var(--Precios);
         margin: 0 0 0 10px;
         text-align: justify;
+        width: 30%;
     }
 
-    .mainML section .contart article .info .Descuento {
+    .mainML section .contart article .info .mover3070 .Descuento {
         font-size: var(--Descuentos);
         color: var(--Verde);
         text-align: justify;
-        margin: 10px;
+        margin: 2px 0 0 10px;
+        width: 70%;
     }
 
     .mainML section .contart article .info .Descripciones {
         font-size: var(--Descripciones);
         margin-left: 10px;
         text-align: justify;
-        margin-top: 5px;
+        margin-top: 48px;
         color: var(--Grisoscuro);
     }
 }
@@ -242,15 +246,18 @@
         position: relative;        
         top: -15px;
     }
+    .mainML section .contart article .info .mover3070{
+        display: flex;
+    }
 
-    .mainML section .contart article .info .Precio {
+    .mainML section .contart article .info ,.mover3070 .Precio {
         font-size: var(--Precios);
         margin-left: -48px;
         display: inline;
         padding: 0 10px 10px 10px;
     }
 
-    .mainML section .contart article .info .Descuento {
+    .mainML section .contart article .info .mover3070 .Descuento {
         font-size: var(--Descuentos);
         color: var(--Verde);
         text-align: end;
