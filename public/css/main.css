@@ -47,15 +47,20 @@
         border-top: solid 1px var(--Grisclaro);
     }
 
-    .mainML section article .info i {
+    .mainML section article .info .envio {
         display: block;
-        margin: 10px;
         color: var(--Verde);
         text-align: justify;
-        border: solid 1px var(--Verde);
-        border-radius: 100%;
-        width: 10%;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
         height: 30px;
+        border: 1px solid var(--Verde);
+        background-color: #FFF;
+        border-radius: 50%;
+        position: relative;
+        margin-left: auto;
+        top: -15px;
     }
 
     .mainML section article .info .Precio {
@@ -82,7 +87,7 @@
 
     .mainML {
         background-color: #ebebeb;
-        width: 90%;
+        width: 100%;
         margin: auto;
     }
 
@@ -105,7 +110,13 @@
         height: 40px;
     }
 
-    .mainML section article {
+    .mainML section .contart {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .mainML section .contart article {
         background-color: white;
         text-align: center;
         border: solid 1px lightgray;
@@ -115,42 +126,47 @@
         height: 338px;
     }
 
-    .mainML section article .imgproducto {
+    .mainML section .contart article .imgproducto {
         text-align: center;
         width: 58%;
         margin: auto;
 
     }
 
-    .mainML section article .info {
+    .mainML section .contart article .info {
         border-top: solid 1px var(--Grisclaro);
     }
 
-    .mainML section article .info i {
+    .mainML section .contart article .info .envio {
         display: block;
-        margin: 10px;
         color: var(--Verde);
         text-align: justify;
-        border: solid 1px var(--Verde);
-        border-radius: 100%;
-        width: 10%;
-        height: 30px;
+        font-size: 17px;
+        padding: 6px;
+        width: 23px;
+        height: 24px;
+        border: 1px solid var(--Verde);
+        background-color: #FFF;
+        border-radius: 50%;
+        position: relative;
+        margin-left: auto;
+        top: -20px;
     }
 
-    .mainML section article .info .Precio {
+    .mainML section .contart article .info .Precio {
         font-size: var(--Precios);
         margin: 0 0 0 10px;
         text-align: justify;
     }
 
-    .mainML section article .info .Descuento {
+    .mainML section .contart article .info .Descuento {
         font-size: var(--Descuentos);
         color: var(--Verde);
         text-align: justify;
         margin: 10px;
     }
 
-    .mainML section article .info .Descripciones {
+    .mainML section .contart article .info .Descripciones {
         font-size: var(--Descripciones);
         margin-left: 10px;
         text-align: justify;
@@ -160,7 +176,7 @@
 }
 
 @media screen and (min-width:769px) {
-        .mainML {
+    .mainML {
         background-color: #ebebeb;
         width: 100%;
         margin: auto;
@@ -178,63 +194,75 @@
 
     .mainML section h3 {
         font-size: var(--TitularesBasadoentuúltimavisitaOfertas);
-        text-align: center;
+        text-align: left;
         font-family: var(--familyfont);
         color: var(--Grisoscuro);
-        margin-top: 10px;
+        margin: 10px 0 10px 37px;
         height: 40px;
     }
 
-    .mainML section article {
+    .mainML section .contart {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 20px 0 20px;
+    }
+
+    .mainML section .contart article {
         background-color: white;
-        text-align: center;
         border: solid 1px lightgray;
-        margin: auto;
-        margin-bottom: 10px;
-        width: 320px;
-        height: 326px;
-        box-shadow: 0px 0px 10px rgb(100,100,100);
+        width: 212px;
+        height: 295px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
-    .mainML section article .imgproducto {
+    .mainML section .contart article .imgproducto {
         text-align: center;
-        width: 58%;
+        width: 60%;
         margin: auto;
-
+        height: 60%;
     }
 
-    .mainML section article .info {
+    .mainML section .contart article .info {
         border-top: solid 1px var(--Grisclaro);
     }
 
-    .mainML section article .info i {
+    .mainML section .contart article .info .envio {
         display: block;
-        margin: 10px;
         color: var(--Verde);
         text-align: justify;
-        border: solid 1px var(--Verde);
-        border-radius: 100%;
-        width: 10%;
-        height: 30px;
+        font-size: 16px;
+        padding: 5px;
+        width: 23px;
+        height: 20px;
+        border: 1px solid var(--Verde);
+        background-color: #FFF;
+        border-radius: 50%;
+        position: relative;        
+        top: -15px;
     }
 
-    .mainML section article .info .Precio {
+    .mainML section .contart article .info .Precio {
         font-size: var(--Precios);
-        margin: 0 0 0 10px;
-        text-align: justify;
+        margin-left: -48px;
+        display: inline;
+        padding: 0 10px 10px 10px;
     }
 
-    .mainML section article .info .Descuento {
+    .mainML section .contart article .info .Descuento {
         font-size: var(--Descuentos);
         color: var(--Verde);
-        text-align: justify;
+        text-align: end;
         margin: 10px;
+        display: inline;
     }
 
-    .mainML section article .info .Descripciones {
+    .mainML section .contart article .info .Descripciones {
         font-size: var(--Descripciones);
         margin-left: 10px;
-        /* display: none; */
+        padding-top: 10px;
+        color: var(--Grisoscuro);
     }
-    
+
 }
