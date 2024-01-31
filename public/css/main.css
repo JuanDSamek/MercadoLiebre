@@ -250,26 +250,26 @@
         display: flex;
     }
 
-    .mainML section .contart article .info ,.mover3070 .Precio {
+    .mainML section .contart article .info .mover3070 .Precio {
         font-size: var(--Precios);
-        margin-left: -48px;
-        display: inline;
-        padding: 0 10px 10px 10px;
+        margin: 0 0 0 10px;
+        text-align: justify;
+        width: 30%;
     }
 
     .mainML section .contart article .info .mover3070 .Descuento {
         font-size: var(--Descuentos);
         color: var(--Verde);
-        text-align: end;
-        margin: 10px;
-        display: inline;
+        text-align: justify;
+        margin: 2px 0 0 10px;
+        width: 70%;
     }
 
     .mainML section .contart article .info .Descripciones {
-        font-size: var(--Descripciones);
-        margin-left: 10px;
-        padding-top: 10px;
+        font-size: var(--Descripciones);        
+        padding-top: 18px;
         color: var(--Grisoscuro);
+        margin: 0;
     }
 
 }
