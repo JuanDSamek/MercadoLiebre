@@ -38,7 +38,6 @@
         font-weight: lighter;
         margin: 0px;
         padding: 0px;
-
     }
 }
 @media screen and (min-width:361px){
@@ -78,10 +77,13 @@
     }
     
         
-    .main-footer div {
+    .main-footer .copy {
         font-weight: lighter;
         margin: 0px;
         padding: 0px;
+    }
+    .main-footer .copy p{
+        margin-bottom: 0px;
     }
 }
 @media screen and (min-width:769px){
