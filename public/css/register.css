@@ -1,4 +1,15 @@
-main{
-margin: 0;
+.register {      
+    display: flex;
+    justify-content: center;
 }
 
+.register .form {
+    width: 90%;
+    background-color: var(--Grisclaro);
+    margin: auto;
+    padding: 20px;
+
+}
+.span{
+    font-size: 12px;
+}

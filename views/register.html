@@ -56,102 +56,183 @@
 
 
     </header>
-    <main class="register container my-4">
-        <form action="registrar" method="post" class="row justify-content-center">
+    <main class="register container my-3">
 
-            <div class="col-10 col-6 col-4 d-flex flex-column my-3 ">
-                <label class="text-secondary " for="nombre">Nombre y apellido</label>
-                <input class="form-control form-control-sm" type="text" name="nombre" value="" id="nombre">
-            </div>
+        <div class="form row justify-content-center shadow">
 
-            <div class="col-10 col-6 col-4 d-flex flex-column  my-3">
-                <label class="text-secondary for="">Nombre de Usuario</label>
-                <input class="form-control form-control-sm" type="text" name="usuario" value="" id="usuario">
-            </div>
+            <form action="registrar" method="post" >
 
-            <div class="col-10 col-6 col-4 d-flex flex-column  my-3">
-                <label class="text-secondary for="email">E-mail</label>
-                <input class="form-control form-control-sm" type="email" name="email" value="" id="email">
-            </div>
+                <div class="col-12 mx-auto d-flex flex-column my-3 ">
+                    <label for="nombre"></label>
+                    <input class="text-secondary form-control form-control-sm" type="text" name="nombre" value=""
+                        id="nombre" placeholder="Nombre y apellido">
+                    <div class="span">
+                        <span class="text-danger">*Este campo es obligatorio</span>
+                    </div>
 
-            <div class="col-10 col-6 col-4 row p-0 my-3">
-                <h4 class="col-12 ">Fecha de nacimiento</h4>
-
-                <div class="col-10">
-                    <label for="fechaNac"></label>                    
-                    <input class="form-control form-control-sm" type="date" name="fechaNac" value="" id="fechaNac">
-                </div>
-            </div>
-
-            <div class="col-10 d-flex flex-column  my-3">
-                <label class="text-secondary">Domicilio</label>
-                <input class="form-control form-control-sm" type="text" name="calle" value="">
-            </div>
-
-            <div class="col-10 row p-0">
-                <h4 class="col-12 my-3">Perfil de Usuario</h4>
-                <div class="col-6">
-                    <input type="radio" class="form-check-input" name="perfilUsuario" value="comprador" id="comprador">
-                    <label for="comprador">Comprador</label>
                 </div>
 
-                <div class="col-6">
-                    <input type="radio" class="form-check-input" name="perfilUsuario" value="vendedor" id="vendedor">
-                    <label for="vendedor">Vendedor</label>
-                </div>
-            </div>
-            <div class="col-10 row p-0">
+                <div class="col-12 mx-auto d-flex flex-column my-3">
 
-                <h4 class="col-10 my-3">Categoria de interés</h4>
+                    <label for=""></label>
+                    <input class="text-secondary form-control form-control-sm" form-control form-control-sm" type="text"
+                        name="usuario" value="" id="usuario" placeholder="Nombre de Usuario">
 
-                <div class="col-10 my-2 ">
-                    <input type="checkbox" class="form-check-input " name="intereses" value="electro" id="electro">
-                    <label for="electro">Electro</label>
-                </div>
+                    <div class="span">
 
-                <div class="col-10 my-3">                    
-                    <input type="checkbox" class="form-check-input " name="intereses" value="moda" id="moda">
-                    <label for="moda">Moda</label>
+                        <span class="text-danger">*Este campo es obligatorio</span>
+
+                    </div>
+
                 </div>
 
-                <div class="col-10 my-3">
-                    <input type="checkbox" class="form-check-input " name="intereses" value="hogar" id="hogar">
-                    <label for="hogar">Hogar</label>
+                <div class="col-12 mx-auto d-flex flex-column my-3">
+
+                    <label for=" email"></label>
+                    <input class="text-secondary form-control form-control-sm" type="email" name="email" value=""
+                        id="email" placeholder="E-mail">
+
+                    <div class="span">
+
+                        <span class="text-danger">*Este campo es obligatorio</span>
+
+                    </div>
+
                 </div>
 
-                <div class="col-10 my-3">
-                    <input type="checkbox" class="form-check-input " name="intereses" value="juguetería" id="jugueteria">
-                    <label for="juguetería">Juguetería</label>
+                <div class="col-12 mx-auto row p-0 my-3">
+
+                    <h4 class="col-12 mx-auto ">Fecha de nacimiento</h4>
+
+                    <div class="col-12 mx-auto">
+
+                        <label for="fechaNac"></label>
+                        <input class="form-control form-control-sm" type="date" name="fechaNac" value="" id="fechaNac">
+
+                    </div>
+
                 </div>
 
-                <div class="col-10 my-3">
-                    <input type="checkbox" class="form-check-input " name="intereses" value="vidaSana" id="vidaSana">
-                    <label for="vidaSana">Vida sana</label>
+                <div class="col-12 mx-auto">
+
+                    <label></label>
+                    <input class="text-secondary form-control form-control-sm" type="text" name="calle" value=""
+                        placeholder="Domicilio">
+
+                    <div class="span">
+
+                        <span class="text-danger">*Este campo es obligatorio</span>
+
+                    </div>
+
                 </div>
 
-                <div class="col-10 my-3">
-                    <label for="avatar">Foto de usuario</label>
-                    <input class="form-control form-control-sm" type="file" name="avatar" value="avatar" id="avatar" accept=".jpg">
+                <div class="col-12 mx-auto row p-0">
+
+                    <h4 class="col-12 mx-auto my-3">Perfil de Usuario</h4>
+
+                    <div class="col-7 mx-auto">
+
+                        <input type="radio" class="form-check-input" name="perfilUsuario" value="comprador"
+                            id="comprador">
+                        <label for="comprador">Comprador</label>
+
+                    </div>
+
+                    <div class="col-5 mx-auto">
+
+                        <input type="radio" class="form-check-input" name="perfilUsuario" value="vendedor"
+                            id="vendedor">
+                        <label for="vendedor">Vendedor</label>
+
+                    </div>
+
                 </div>
 
-                <div class="col-10">
-                    <label for="contrasenia">Contraseña</label>
-                    <input class="form-control form-control-sm" type="password" name="contrasenia" value="" id="contrasenia">
+                <div class="col-12 mx-auto row p-0">
+
+                    <h4 class=" my-3">Categoria de interés</h4>
+
+                    <div class="col-10 mx-auto my-2 ">
+
+                        <input type="checkbox" class="form-check-input " name="intereses" value="electro" id="electro">
+                        <label for="electro">Electro</label>
+
+                    </div>
+
+                    <div class="col-10 mx-auto my-3">
+
+                        <input type="checkbox" class="form-check-input " name="intereses" value="moda" id="moda">
+                        <label for="moda">Moda</label>
+
+                    </div>
+
+                    <div class="col-10 mx-auto my-3">
+
+                        <input type="checkbox" class="form-check-input " name="intereses" value="hogar" id="hogar">
+                        <label for="hogar">Hogar</label>
+
+                    </div>
+
+                    <div class="col-10 mx-auto my-3">
+
+                        <input type="checkbox" class="form-check-input " name="intereses" value="juguetería"
+                            id="jugueteria">
+                        <label for="juguetería">Juguetería</label>
+
+                    </div>
+
+                    <div class="col-10 mx-auto my-3">
+
+                        <input type="checkbox" class="form-check-input " name="intereses" value="vidaSana"
+                            id="vidaSana">
+                        <label for="vidaSana">Vida sana</label>
+
+                    </div>
+
                 </div>
 
-                <div class="col-10">
-                    <label for="contrasenia">Confirmar contraseña</label>
-                    <input class="form-control form-control-sm" type="password" name="contrasenia" value="" id="contrasenia">
+                <div class="col-12 mx-auto my-3">
+
+                    <label for="avatar"><b>Foto de usuario</b></label>
+                    <input class="form-control form-control-sm" type="file" name="avatar" value="avatar" id="avatar"
+                        accept=".jpg">
+
                 </div>
-            </div>
-            <div class="d-flex justify-content-center gap-2 mt-4 ">
-                <button class="btn btn-primary " type="submit">Enviar</button>
-                <button class="btn btn-danger " type="reset">Borrar</button>                
-            </div>
 
 
-        </form>
+                <div class="col-12 mx-auto">
 
+                    <label for="contrasenia"></label>
+                    <input class="form-control form-control-sm" type="password" name="contrasenia" value=""
+                        id="contrasenia" placeholder="Contraseña">
+
+                    <div class="span">
+                        <span class="text-danger">*Este campo es obligatorio</span>
+                    </div>
+                </div>
+
+                <div class="col-12 mx-auto">
+
+                    <label for="contrasenia"></label>
+                    <input class="form-control form-control-sm" type="password" name="contrasenia" value=""
+                        id="contrasenia" placeholder="Confirmar contraseña">
+
+                    <div class="span">
+                        <span class="text-danger">*Este campo es obligatorio</span>
+                    </div>
+                </div>
+
+                <div class="col-10 mx-auto d-flex justify-content-center gap-2 mt-4 ">
+
+                    <button class="btn btn-primary " type="submit">Enviar</button>
+                    <button class="btn btn-danger " type="reset">Borrar</button>
+
+                </div>
+
+
+            </form>
+        </div>
     </main>
     <footer class="main-footer">
         <section>
