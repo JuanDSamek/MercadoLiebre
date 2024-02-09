@@ -1,4 +1,3 @@
-@media screen and (max-width:360px) {
 
     .mainML {
         background-color: #ebebeb;
@@ -81,7 +80,7 @@
         margin-left: 10px;
         display: none;
     }
-}
+
 
 @media screen and (min-width:361px) {
 
