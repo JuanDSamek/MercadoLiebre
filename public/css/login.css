@@ -1,0 +1,14 @@
+.login {      
+    display: flex;
+    justify-content: center;
+}
+
+.login .form {
+    width: 90%;
+    background-color: var(--Grisclaro);
+    margin: auto;   
+
+}
+.btn {
+    width: 100%;
+}

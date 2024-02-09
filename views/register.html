@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercado Liebre</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <link rel="stylesheet" href="/css/styles.css">
 
 </head>
@@ -51,77 +56,183 @@
 
 
     </header>
-    <main>
-        <form action="registrar">
+    <main class="register container my-3">
 
-            <div>
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" value="" id="nombre">
-            </div>
+        <div class="form row justify-content-center shadow">
 
-            <div>
-                <label for="apellido">Apellido</label>
-                <input type="text" name="apellido" value="" id="apellido">
-            </div>
+            <form action="registrar" method="post" >
 
-            <div>
-                <label for="usuario">Nombre de Usuario</label>
-                <input type="text" name="usuario" value="" id="usuario">
-            </div>
+                <div class="col-12 mx-auto d-flex flex-column my-3 ">
+                    <label for="nombre"></label>
+                    <input class="text-secondary form-control form-control-sm" type="text" name="nombre" value=""
+                        id="nombre" placeholder="Nombre y apellido">
+                    <div class="span">
+                        <span class="text-danger">*Este campo es obligatorio</span>
+                    </div>
 
-            <div>
-                <label for="email">Email</label>
-                <input type="email" name="email" value="" id="email">
-            </div>
-            <div>
-                <label for="fechaNac">Fecha de nacimiento</label>
-                <input type="date" name="fechaNac" value="" id="fechaNac">
-            </div>
+                </div>
 
-            <div>
-                <label>Domicilio</label>
-                <input type="text" name="calle" value="">
-                <input type="number" name="numero" value="">
-            </div>
-            <div>
-                <label for="perfil">Perfil del usuario:</label>
-                <select id="perfil" name="perfil">
-                    <option value="comprar">Comprar</option>
-                    <option value="vender">Vender</option>
-                </select>                
-            </div>
-            <div>
-                <label for="">Categorías de interés</label>
-                <select id="categoria" name="categoria">
-                    <option value="1"></option>
-                    <option value="2">Electro</option>
-                    <option value="3">Moda</option>
-                    <option value="4">Hogar</option>
-                    <option value="5">Juguetería</option>
-                    <option value="6">Vida sana</option>
-                </select>
-            </div>
-            <div>
-                <label>Foto de usuario</label>
-                <input type="" name="" value="">
-            </div>
+                <div class="col-12 mx-auto d-flex flex-column my-3">
 
-            <div>
-                <label for="contrasenia">Contraseña</label>
-                <input type="password" name="contrasenia" value="" id="contrasenia">
-            </div>
+                    <label for=""></label>
+                    <input class="text-secondary form-control form-control-sm" form-control form-control-sm" type="text"
+                        name="usuario" value="" id="usuario" placeholder="Nombre de Usuario">
 
-            <div>
-                <label for="contrasenia">Confirmar contraseña</label>
-                <input type="password" name="contrasenia" value="" id="contrasenia">
-            </div>
-            
-            <button type="">Página Principal</button>
-            <button type="submit">Enviar datos</button>
-            <button type="reset">Borrar todo</button>
+                    <div class="span">
 
-        </form>
+                        <span class="text-danger">*Este campo es obligatorio</span>
 
+                    </div>
+
+                </div>
+
+                <div class="col-12 mx-auto d-flex flex-column my-3">
+
+                    <label for=" email"></label>
+                    <input class="text-secondary form-control form-control-sm" type="email" name="email" value=""
+                        id="email" placeholder="E-mail">
+
+                    <div class="span">
+
+                        <span class="text-danger">*Este campo es obligatorio</span>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 mx-auto row p-0 my-3">
+
+                    <h4 class="col-12 mx-auto ">Fecha de nacimiento</h4>
+
+                    <div class="col-12 mx-auto">
+
+                        <label for="fechaNac"></label>
+                        <input class="form-control form-control-sm" type="date" name="fechaNac" value="" id="fechaNac">
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 mx-auto">
+
+                    <label></label>
+                    <input class="text-secondary form-control form-control-sm" type="text" name="calle" value=""
+                        placeholder="Domicilio">
+
+                    <div class="span">
+
+                        <span class="text-danger">*Este campo es obligatorio</span>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 mx-auto row p-0">
+
+                    <h4 class="col-12 mx-auto my-3">Perfil de Usuario</h4>
+
+                    <div class="col-7 mx-auto">
+
+                        <input type="radio" class="form-check-input" name="perfilUsuario" value="comprador"
+                            id="comprador">
+                        <label for="comprador">Comprador</label>
+
+                    </div>
+
+                    <div class="col-5 mx-auto">
+
+                        <input type="radio" class="form-check-input" name="perfilUsuario" value="vendedor"
+                            id="vendedor">
+                        <label for="vendedor">Vendedor</label>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 mx-auto row p-0">
+
+                    <h4 class=" my-3">Categoria de interés</h4>
+
+                    <div class="col-10 mx-auto my-2 ">
+
+                        <input type="checkbox" class="form-check-input " name="intereses" value="electro" id="electro">
+                        <label for="electro">Electro</label>
+
+                    </div>
+
+                    <div class="col-10 mx-auto my-3">
+
+                        <input type="checkbox" class="form-check-input " name="intereses" value="moda" id="moda">
+                        <label for="moda">Moda</label>
+
+                    </div>
+
+                    <div class="col-10 mx-auto my-3">
+
+                        <input type="checkbox" class="form-check-input " name="intereses" value="hogar" id="hogar">
+                        <label for="hogar">Hogar</label>
+
+                    </div>
+
+                    <div class="col-10 mx-auto my-3">
+
+                        <input type="checkbox" class="form-check-input " name="intereses" value="juguetería"
+                            id="jugueteria">
+                        <label for="juguetería">Juguetería</label>
+
+                    </div>
+
+                    <div class="col-10 mx-auto my-3">
+
+                        <input type="checkbox" class="form-check-input " name="intereses" value="vidaSana"
+                            id="vidaSana">
+                        <label for="vidaSana">Vida sana</label>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 mx-auto my-3">
+
+                    <label for="avatar"><b>Foto de usuario</b></label>
+                    <input class="form-control form-control-sm" type="file" name="avatar" value="avatar" id="avatar"
+                        accept=".jpg">
+
+                </div>
+
+
+                <div class="col-12 mx-auto">
+
+                    <label for="contrasenia"></label>
+                    <input class="form-control form-control-sm" type="password" name="contrasenia" value=""
+                        id="contrasenia" placeholder="Contraseña">
+
+                    <div class="span">
+                        <span class="text-danger">*Este campo es obligatorio</span>
+                    </div>
+                </div>
+
+                <div class="col-12 mx-auto">
+
+                    <label for="contrasenia"></label>
+                    <input class="form-control form-control-sm" type="password" name="contrasenia" value=""
+                        id="contrasenia" placeholder="Confirmar contraseña">
+
+                    <div class="span">
+                        <span class="text-danger">*Este campo es obligatorio</span>
+                    </div>
+                </div>
+
+                <div class="col-10 mx-auto d-flex justify-content-center gap-2 mt-4 ">
+
+                    <button class="btn btn-primary " type="submit">Enviar</button>
+                    <button class="btn btn-danger " type="reset">Borrar</button>
+
+                </div>
+
+
+            </form>
+        </div>
     </main>
     <footer class="main-footer">
         <section>
@@ -148,7 +259,9 @@
         </div>
 
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
