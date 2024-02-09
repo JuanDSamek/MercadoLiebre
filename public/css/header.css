@@ -242,10 +242,10 @@
     .header1 .headercomp  form .lupa{
         font-size: 12px;
         background-color: white;
-        padding: 12px;
+        padding: 11px;
         display: inline;
         position: absolute;
-        right: 391px;
+        right: 37%;
         border-radius: 3px;
         color: var(--Grisoscuro);
     }
